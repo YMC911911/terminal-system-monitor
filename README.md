@@ -1,9 +1,12 @@
-# Terminal System Monitor
-A clean and colorful real-time system monitor built for the terminal.
+# Terminal System Monitor 🔧
+A real-time terminal dashboard providing CPU, memory, disk, and system insights.
 
 
-A real-time terminal system monitor built using Node.js, blessed-contrib, and chalk.  
-Displays CPU usage, per-core stats, memory usage, disk usage, and system info in a colorful TUI dashboard.
+![Node.js](https://img.shields.io/badge/Node.js-18%2B-3C873A?style=for-the-badge&logo=node.js)
+![Blessed-Contrib](https://img.shields.io/badge/blessed--contrib-TUI%20Dashboard-blue?style=for-the-badge)
+![Chalk](https://img.shields.io/badge/Chalk-Colorful%20CLI-yellow?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
