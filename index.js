@@ -4,9 +4,6 @@ import * as contrib from "blessed-contrib";
 import chalk from "chalk";
 import { exec } from "node:child_process";
 
-// -------------------------------------
-// SCREEN & GRID
-// -------------------------------------
 const screen = blessed.screen({
   smartCSR: true,
   title: "Krishna System Monitor"
@@ -14,47 +11,36 @@ const screen = blessed.screen({
 
 const grid = new contrib.grid({ rows: 12, cols: 12, screen });
 
-// -------------------------------------
-// UI PANELS
-// -------------------------------------
 
-// CPU GRAPH
 const cpuGraph = grid.set(0, 0, 6, 12, contrib.line, {
   label: chalk.blue.bold(" CPU Usage (%) "),
   showLegend: true,
   legend: { width: 10 }
 });
 
-// CPU TABLE
 const cpuTable = grid.set(6, 0, 3, 6, contrib.table, {
   label: chalk.blue.bold(" CPU Per Core "),
   columnWidth: [12, 12]
 });
 
-// MEMORY BOX
 const memoryBox = grid.set(6, 6, 3, 6, blessed.box, {
   label: chalk.magenta.bold(" Memory "),
   tags: true,
   content: ""
 });
 
-// DISK BOX
 const diskBox = grid.set(9, 6, 3, 6, blessed.box, {
   label: chalk.green.bold(" Disk Space "),
   tags: true,
   content: ""
 });
 
-// SYSTEM INFO BOX
 const infoBox = grid.set(9, 0, 3, 6, blessed.box, {
   label: chalk.yellow.bold(" System Info "),
   tags: true,
   content: ""
 });
 
-// -------------------------------------
-// HELPERS
-// -------------------------------------
 
 let history = Array(30).fill(0);
 let prevCPUs = os.cpus();
@@ -80,27 +66,21 @@ function bytesGB(bytes) {
   return (bytes / 1024 ** 3).toFixed(2);
 }
 
-// -------------------------------------
-// UPDATE FUNCTION
-// -------------------------------------
 function update() {
   const newCPUs = os.cpus();
 
-  // per-core usage
   const perCore = newCPUs.map((cpu, i) =>
     calcCPU(prevCPUs[i], cpu)
   );
 
   prevCPUs = newCPUs;
 
-  // avg cpu
   const avgCPU =
     perCore.reduce((a, b) => a + Number(b), 0) / perCore.length;
 
   history.push(avgCPU);
   history.shift();
 
-  // update graph
   cpuGraph.setData([
     {
       title: "CPU",
@@ -110,15 +90,11 @@ function update() {
     }
   ]);
 
-  // update core table
   cpuTable.setData({
     headers: ["Core", "Usage"],
     data: perCore.map((v, i) => [`CPU ${i}`, colorPercent(v)])
   });
-
-  // -------------------------------------
-  // MEMORY
-  // -------------------------------------
+  
   const total = os.totalmem();
   const free = os.freemem();
   const used = total - free;
@@ -132,9 +108,6 @@ function update() {
     `Status: ${colorPercent(percent)}`
   );
 
-  // -------------------------------------
-  // DISK SPACE (WMIC - Windows reliable)
-  // -------------------------------------
   exec("wmic logicaldisk get size,freespace,caption", (err, stdout) => {
     if (err || !stdout.trim()) {
       diskBox.setContent(chalk.red("Disk data unavailable"));
@@ -167,9 +140,6 @@ function update() {
     screen.render();
   });
 
-  // -------------------------------------
-  // SYSTEM INFO
-  // -------------------------------------
   infoBox.setContent(
     chalk.bold(" OS: ") + chalk.blue(`${os.type()} ${os.release()}\n`) +
     chalk.bold(" CPU: ") + chalk.green(newCPUs[0].model) + "\n" +
@@ -181,9 +151,6 @@ function update() {
   screen.render();
 }
 
-// -------------------------------------
-// LOOP + QUIT KEYS
-// -------------------------------------
 setInterval(update, 1000);
 
 screen.key(["escape", "q", "C-c"], () => process.exit(0));
