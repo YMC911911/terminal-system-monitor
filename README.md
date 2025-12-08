@@ -1,4 +1,4 @@
-# Terminal System Monitor 🔧
+# Terminal System Monitor 🔧 (Built with Node.js)
 A real-time terminal dashboard providing CPU, memory, disk, and system insights.
 
 
