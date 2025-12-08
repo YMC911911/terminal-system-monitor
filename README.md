@@ -1,4 +1,6 @@
 # Terminal System Monitor
+A clean and colorful real-time system monitor built for the terminal.
+
 
 A real-time terminal system monitor built using Node.js, blessed-contrib, and chalk.  
 Displays CPU usage, per-core stats, memory usage, disk usage, and system info in a colorful TUI dashboard.
